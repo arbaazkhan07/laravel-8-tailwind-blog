@@ -21,7 +21,7 @@
         <div class="grid grid-cols-2 my-12 w-4/5 mx-auto">
             <div>
                 <div data-aos="fade-right" data-delay="2000">
-                    <img src="images/{{$post->image_path}}" width="400" alt="">
+                    <img src="{{ asset('images/'.$post->image_path) }}" width="400" alt="">
                 </div>
             </div>
             <div class="flex flex-col justify-center px-4" data-aos="fade-left" data-delay="2000">

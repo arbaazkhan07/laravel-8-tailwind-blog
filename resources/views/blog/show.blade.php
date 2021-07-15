@@ -6,6 +6,12 @@
         <span>{{ $post->title }}</span>
     </div>
 
+    <div class="flex justify-center w-4/5 mx-auto mt-8">
+        <div data-aos="zoom-in" data-delay="2000">
+            <img src="{{ asset('images/'.$post->image_path) }}" width="800" alt="">
+        </div>
+    </div>
+
     <div class="mx-auto w-4/5 mt-16">
         <b class="text-gray-400">By <span class="font-bold text-gray-900">{{$post->user->name}}, </span>Created on {{ date('jS M Y', strtotime($post->updated_at)) }}</b>
 
